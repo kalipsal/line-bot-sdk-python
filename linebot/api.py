@@ -953,6 +953,7 @@ class LineBotApi(object):
         if headers is None:
             headers = {'Content-Type': 'application/json'}
         headers.update(self.headers)
+        print(data)
 
         response = self.http_client.post(
             url, headers=headers, data=data, timeout=timeout

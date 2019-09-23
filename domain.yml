@@ -1,0 +1,51 @@
+intents:
+- goodbye
+- greet
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- ask_4_news
+- thanks
+- want_a_song
+- want_a_video
+templates:
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: Great carry on!
+  utter_news:
+  - text: "http://hub.line.me"
+  utter_thanks1:
+  - text: "you are welcome"
+  utter_thanks2:
+  - text: "no problem"
+  utter_music:
+  - audio:
+      url: https://www.bensound.com/royalty-free-music?download=jazzyfrenchy
+      duration: 104
+    text: 'Have fun'
+  utter_video:
+  - video:
+      url: https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4
+      preview: https://i.imgur.com/nGF1K8f.jpg
+      duration: 170
+    text: 'Enjoy'
+actions:
+- utter_cheer_up
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_news
+- utter_thanks1
+- utter_thanks2
+- utter_music
+- utter_video

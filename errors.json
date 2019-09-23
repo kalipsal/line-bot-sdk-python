@@ -1,0 +1,10 @@
+[
+  {
+    "text": "salut",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  }
+]
