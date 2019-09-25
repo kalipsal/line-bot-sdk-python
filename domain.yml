@@ -9,6 +9,20 @@ intents:
 - thanks
 - want_a_song
 - want_a_video
+- inform
+entities:
+- name
+- superman
+slots:
+  name:
+    type: text
+    initial_value: "human"
+  superman:
+    type: text
+    initial_value: ""
+  user_id:
+    type: text
+    initial_value: "guy"
 templates:
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
@@ -16,16 +30,17 @@ templates:
   utter_did_that_help:
   - text: Did that help you?
   utter_goodbye:
-  - text: Bye
+  - text: Bye {superman}
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hey {name}! How are you?
+  - text: Hello {name}! How are you?
+  - text: Hi {name}! How are you?
   utter_happy:
   - text: Great carry on!
   utter_news:
   - text: "http://hub.line.me"
-  utter_thanks1:
+  utter_thanks:
   - text: "you are welcome"
-  utter_thanks2:
   - text: "no problem"
   utter_music:
   - audio:
@@ -45,7 +60,14 @@ actions:
 - utter_greet
 - utter_happy
 - utter_news
-- utter_thanks1
-- utter_thanks2
+- utter_thanks
 - utter_music
 - utter_video
+- action_greet
+- action_hello_world
+- action_get_profile
+- action_ask_howcanhelp
+- action_on_it
+- action_ask_cuisine
+- action_ask_numpeople
+- action_ack_dosearch

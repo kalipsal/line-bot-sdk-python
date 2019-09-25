@@ -57,7 +57,7 @@ class LineChatInput(InputChannel):
         output_channel = self.get_output_channel(reply_token, source)
 
         user_msg = UserMessage(
-            text, output_channel, 'recipient_id', input_channel=self.name()
+            text, output_channel, source.sender_id, input_channel=self.name()
         )
         await on_new_message(user_msg)
 
